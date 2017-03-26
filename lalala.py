@@ -16,7 +16,8 @@ plt.xticks(new_ticks)
 plt.yticks([-2, -1.8, -1, 1.22, 3],['$really\ bad$', '$bad$', '$normal$', '$good$', '$really\ good$'])
 
 ax = plt.gca()
-
+ax.spines['right'].set_color('none')
+ax.spines['top'].set_color('none')
 
 
 ax.xaxis.set_ticks_position('bottom')
