@@ -9,7 +9,7 @@ train_target = np.loadtxt('C:/Users/Bingtao LI/PycharmProjects/text/train_target
 train_target.reshape(1,-1)
 test_data= np.loadtxt('C:/Users/Bingtao LI/PycharmProjects/text/test_data.csv', delimiter=",", skiprows=0)
 test_target= np.loadtxt('C:/Users/Bingtao LI/PycharmProjects/text/test_target.csv', delimiter=",", skiprows=0)
-
+test_target.reshape(1,-1)
 
 knn = neighbors.KNeighborsClassifier(5)
 knn.fit(train_data,train_target)
